@@ -1,23 +1,34 @@
 import React from 'react';
-import ReactDOM from "react-dom";
-import ScrollToTop from '../src/front/js/component/scrollToTop';
-import './App.css';
-// import Cards from '../src/front/js/component/Cards';
-// import Navbar from '../src/front/js/component/navbar';
-// import Slider from '../src/front/js/component/slider';
+import Navbar from './front/js/component/navbar';
+import Footer from './front/js/component/footer';
 import {Home} from './front/js/views/home.js';
+import Productos from './front/js/views/products.js';
+import Formacion from './front/js/views/formacion.js';
+import Noticias from './front/js/views/noticias.js';
+import Articulos from './front/js/views/articulos.js';
+import Entrenamientos from './front/js/views/entrenamientos.js';
+import ScrollToTop from './front/js/component/scrollToTop';
 
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
-    <div className="App d-flex flex-column h-100">
-      <Home/>
-      {/* <ScrollToTop>
-        
-      </ScrollToTop> */}
-      
-    </div>
+    <>
+      <Router>
+        <ScrollToTop/>
+        <Navbar/>
+        <Switch>
+          <Route path='/' exact component={Home}/>
+          <Route path='/products' component={Productos}/>
+          <Route path='/formacion' component={Formacion}/>
+          <Route path='/noticias' component={Noticias}/>
+          <Route path='/articulos' component={Articulos}/>
+          <Route path='/entrenamientos' component={Entrenamientos}/>
+        </Switch>
+        <Footer/>
+      </Router>
+    </>
   );
 }
 

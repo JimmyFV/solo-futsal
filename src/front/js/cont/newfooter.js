@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../component/footer/styles/footer'
 // import Icon from '../components/icons'
 
-export function FooterContainer() {
+function FooterContainer() {
     return (
         <Footer>
             <Footer.Wrapper>
@@ -39,3 +39,5 @@ export function FooterContainer() {
         </Footer>
     )
 }
+
+export default FooterContainer;

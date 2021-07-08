@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     /* background: red; */
-`
+`;
 
 export const Column = styled.div`
   display: flex;

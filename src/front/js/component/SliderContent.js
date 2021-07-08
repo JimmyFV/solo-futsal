@@ -1,6 +1,8 @@
 import React from 'react';
 import sliderImage from './sliderImage.js';
+import PropTypes from "prop-types";
 
+// ACA SE DEBE POR MEDIO DE IF ELSE DEFINIR EL TIPO DE INFORMACION PARA CADA SLIDER
 function SliderContent(props){
     return(
         <section>
@@ -18,7 +20,7 @@ function SliderContent(props){
 							<div className="col-12 col-lg-4 pt-5 mt-3">
 								<h1 className="display-5 text-white">Obtené tu pizarra personalizada</h1>
 								<p className="text-white">
-									Explorá la variedad de nuestras pizarras disponibles
+                                    Explorá la variedad de nuestras pizarras disponibles
 								</p>
 								<button className="btn btn-warning btn-lg">¡Obtenela ya!</button>
 							</div>
@@ -32,3 +34,8 @@ function SliderContent(props){
 }
 
 export default SliderContent
+
+SliderContent.propTypes = {
+	title: PropTypes.string,
+    description: PropTypes.string,
+};

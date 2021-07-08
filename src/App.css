@@ -1,13 +1,81 @@
-.App{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Montserrat', sans-serif; */
+
     
     /* background: rgb(2,0,36);
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(14,73,181,1) 35%, rgba(0,212,255,1) 100%);  */
     /* Propiedad que da el espacio entre el navbar (al darle fixed-top) y el slider */
     /* padding-top: 10rem; */
 
-}
 
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'PT Sans', sans-serif;
+      }
+      
+      .home,
+      .articulos,
+      .products,
+      .formacion,
+      .noticias,
+      .entrenamientos {
+        display: flex;
+        height: 90vh;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+      }
+      
+      .articulos {
+        background-image: url('https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-size: 100px;
+      }
+      
+      .products {
+        background-image: url('https://images.pexels.com/photos/3886235/pexels-photo-3886235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-position: center;
+        background-size: fill;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-size: 100px;
+      }
+
+      .entrenamientos {
+        background-image: url('https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-position: center;
+        background-size: fill;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-size: 100px;
+      }
+
+
+      .formacion {
+        background-image: url('https://images.pexels.com/photos/6078300/pexels-photo-6078300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-position: center;
+        background-size: fill;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-size: 100px;
+      }
+      
+      .noticias {
+        background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) ), url('https://images.pexels.com/photos/262524/pexels-photo-262524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center/cover no-repeat;
+        /* background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        color: #fff;
+        font-size: 100px;
+      }

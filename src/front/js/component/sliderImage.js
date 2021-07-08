@@ -1,15 +1,17 @@
 // import React from 'react';
+import { Link } from 'react-router-dom';
 import img1 from '../../../assets/s1.jpg';
 import img2 from '../../../assets/s2.jpg';
 import img3 from '../../../assets/barca-levante.jpeg';
 import img4 from '../../../assets/s4.jpg';
 
-
+// SE DEBE HACER UN ARRAY PARA CADA SLIDE QUE CONTIENE RESPECTIVO TITULO, DESCRIPCION, URL, IMAGEN Y MENSAJE DE BOTON
 export default [
     {
-        title: 'First Slide',
-        description: 'This is the First Slider of our Carousel.',
+        title: 'Obtené tu pizarra personalizada',
+        description: 'Explorá la variedad de nuestras pizarras disponibles',
         // urls: '',
+        // tipo: 'a',
         image: img1,
     },
     {

@@ -1,3 +1,19 @@
-.card:hover{
-    box-shadow: 5px 10px, 20px 1px rgb(red, green, blue, 0.274) !important;
+.card{
+    height: 460px;
+    width: auto;
+    margin: 10px;
 }
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+    transition: all 0.7s linear;
+}
+
+
+  
+/* .fondo-colaboradores {
+    background-image: url('https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */

@@ -5,6 +5,7 @@ import {CardBlog} from './cardBlog.js';
 import {CardNoticias} from '../component/cardNoticias.js';
 import {CardColaboradores} from '../component/cardColaboradores.js'
 import PropTypes from "prop-types";
+import './cards.css';
 
 export const CardContainer = props => (
 	<div>
@@ -13,7 +14,7 @@ export const CardContainer = props => (
 			{props.cards.map((card, index) => {
 				if (card.tipo == "a") {
 					return (
-						<div className="col-md-3 mb-2" key={index}>
+						<div className="col-md-3 mb-2 fondo-colaboradores" key={index}>
 							<Card imageSource={card.imageSource} subtitle={card.subtitle} text={card.text} url={card.url} />
 						</div>
 					);

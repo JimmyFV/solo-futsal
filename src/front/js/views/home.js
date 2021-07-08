@@ -1,9 +1,9 @@
 import React from 'react';
+import '../../../App.css';
 // import { Link } from "react-router-dom";
 import { CardContainer } from '../component/cardContainer.js';
-import { Navbar } from '../component/navbar.js';
 import { Slider } from '../component/slider.js';
-import  {Footer}  from '../component/footer.js';
+
 
 // import  FooterContainer  from '../cont/newfooter';
 
@@ -50,7 +50,7 @@ export const Home = () => {
 			id: 3,
 			tipo: 'a',
 			title: 'Titulo',
-			subtitle: 'Principios Ofensivos',
+			subtitle: 'Triángulos Defensivos',
 			imageSource: img3,
 			url: 'https://www.instagram.com/casotela/'
 		},
@@ -58,7 +58,7 @@ export const Home = () => {
 			id: 4,
 			tipo: 'a',
 			title: 'Titulo',
-			subtitle: 'Principios Ofensivos',
+			subtitle: 'Desde la base',
 			imageSource: img4,
 			url: 'https://www.instagram.com/casotela/'
 		}
@@ -211,21 +211,15 @@ export const Home = () => {
 
 
 	return (
-		<div>
-			{/* Se invoca el componente Navbar */}
-			<Navbar />
-			
+		<>
 			{/* Se invoca el componente Navbar */}
 			<Slider />
 			{/* Se invoca el componente CardInfo */}
 			<CardContainer title="CAPACITACIONES Y CURSOS" cards={cards} />
 			<CardContainer title="VIDEO ANÁLISIS" cards={cardVideo} />
-			<CardContainer title="BLOG" cards={cardBlog} />
+			<CardContainer title="ARTICULOS" cards={cardBlog} />
 			<CardContainer title="NOTICIAS NACIONALES E INTERNACIONALES" cards={cardNoticias} />
 			<CardContainer title="PATROCINADORES Y COLABORADORES" cards={cardColaboradores} />
-			{/* Se invoca el componente Footer */}
-			{/* <FooterContainer /> */}
-			<Footer copyright="Copyright © My First React Website 2021" />
-		</div>
+		</>
 	);
 }
